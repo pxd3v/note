@@ -7,6 +7,9 @@ defmodule NotesWeb.Router do
 
   scope "/api", NotesWeb do
     pipe_through :api
+
+    get "/", NotesController, :index
+
   end
 
   # Enables LiveDashboard only for development
