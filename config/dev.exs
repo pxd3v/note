@@ -5,7 +5,8 @@ config :notes, Notes.Repo,
   username: "postgres",
   password: "postgres",
   database: "notes_dev",
-  hostname: "db",
+  hostname: "localhost",
+  # hostname: "db"
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 

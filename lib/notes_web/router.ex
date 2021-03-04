@@ -9,7 +9,7 @@ defmodule NotesWeb.Router do
     pipe_through :api
 
     get "/", NotesController, :index
-
+    post "/users", UsersController, :create
   end
 
   # Enables LiveDashboard only for development
